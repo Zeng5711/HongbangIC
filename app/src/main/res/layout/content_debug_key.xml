@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.hongbang.ic.activity.DebugKeyActivity">
+
+    <EditText
+        android:id="@+id/input_ip"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/light_gray2"
+        android:gravity="center_vertical"
+        android:hint="可以输入IP地址"
+        android:inputType="textEmailAddress"
+        android:lines="1"
+        android:paddingLeft="15dp"
+        android:textSize="15sp"/>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/input_ip"
+        android:background="@color/white"
+        android:divider="@color/light_gray"
+        android:dividerHeight="1dp"
+        android:listSelector="@null"/>
+
+</RelativeLayout>

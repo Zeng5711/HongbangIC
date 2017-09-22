@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CommunityChooseActivity">
+
+    <LinearLayout
+        android:id="@+id/edit_community_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f1f1f1"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <EditText
+            android:id="@+id/edit_community_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="36dp"
+            android:background="@drawable/border_community_search"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="5dp"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+    <com.hongbang.ic.view.BladeView
+        android:id="@+id/community_choose_index"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/edit_community_area"
+        android:layout_marginTop="25dp"
+        android:background="@color/white" />
+
+    <com.hongbang.ic.view.PinnedHeaderListView
+        android:id="@+id/community_choose_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/edit_community_area"
+        android:layout_toLeftOf="@id/community_choose_index"
+        android:background="@color/white"
+        android:divider="@color/transparent"
+        android:scrollbars="none"
+        android:dividerHeight="0dp" />
+</RelativeLayout>

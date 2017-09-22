@@ -1,0 +1,103 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:listDivider">@color/gray_line_color</item>
+        <item name="android:listSelector">@null</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:focusable">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionBarSize">44dp</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme" />
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Dialog" parent="android:Theme.Dialog">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:shadowColor">@color/transparent</item>
+        <item name="android:buttonBarStyle">@null</item>
+        <item name="android:windowBackground">@android:drawable/dialog_holo_light_frame</item>
+    </style>
+
+    <style name="AppTheme.Splash" parent="AppBaseTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+    </style>
+
+    <style name="AppTheme.DarkStatusBar" parent="AppBaseTheme"></style>
+
+    <style name="Animation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="CustomWindowTitleBackground">
+            
+        <item name="android:background">@color/title_bar_bg</item>
+    </style>
+
+    <style name="splash_view" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenExitAnimation">@anim/fade_out</item>
+        <item name="android:activityCloseExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="register_success">
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <!--半透明-->
+        <item name="android:windowNoTitle">true</item>
+        <!--无标题-->
+        <item name="android:windowBackground">@drawable/register_success</item>
+        <!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--模糊-->
+    </style>
+
+    <style name="popup_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit_anim</item>
+    </style>
+
+
+    <!--<style name="sevice_dialog" parent="@style/Theme.AppCompat.Dialog">-->
+        <!--<item name="windowBackground">#ffffff</item>-->
+        <!--<item name="windowTitleStyle">@style/DialogWindowTitle</item>-->
+        <!--<item name="windowContentOverlay">@null</item>-->
+        <!--<item name="itemTextAppearance">@style/TextAppearance.Large.Inverse</item>-->
+        <!--<item name="textAppearanceListItem">@style/TextAppearance.Large.Inverse</item>-->
+        <!--<item name="textAppearanceListItemSmall">@style/TextAppearance.Large.Inverse</item>-->
+        <!--<item name="textAppearanceListItemSecondary">@style/TextAppearance.Small.Inverse</item>-->
+    <!--</style>-->
+
+
+
+</resources>

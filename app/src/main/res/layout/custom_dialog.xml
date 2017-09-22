@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/custom_dialog_message"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:minLines="4"
+        android:textColor="@color/black"
+        android:textSize="@dimen/btn_text_size_small" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/custom_dialog_btn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sel_gray_btn_bg"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/btnPressedBgGreen"
+            android:textSize="@dimen/btn_text_size_small"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/custom_dialog_btn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sel_gray_btn_bg"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/btnPressedBgGreen"
+            android:textSize="@dimen/btn_text_size_small"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/custom_dialog_btn_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sel_gray_btn_bg"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/btnPressedBgGreen"
+            android:textSize="@dimen/btn_text_size_small"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

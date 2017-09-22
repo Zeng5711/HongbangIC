@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#767676</color>
+    <color name="red">#d05728</color>
+    <color name="green">#00bd6b</color>
+    <color name="blue">#1776c6</color>
+    <color name="orange">#e59d2e</color>
+    <color name="transparent">#00000000</color>
+    <color name="light_gray">#dfdfdf</color>
+    <color name="light_gray2">#f2f2f2</color>
+
+    <color name="colorPrimary">#00bd6b</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#00bd6b</color>
+
+    <color name="title_bar_bg">#1cbc6e</color>
+
+    <color name="clickable_text_color">#004227</color>
+    <color name="clickable_text_color_disable">#ababab</color>
+    <color name="clickable_text_color_pressed">#006237</color>
+
+    <color name="hint_color">#ababab</color>
+
+    <color name="gray_line_color">#ababab</color>
+
+    <color name="list_divider_color">#e5e5e5</color>
+
+    <color name="btnBgGreen">#00873d</color>
+    <color name="btnDisableBgGreen">#66cd9b</color>
+    <color name="btnPressedBgGreen">#006020</color>
+
+    <color name="colorDotDefault">#8fff</color>
+    <color name="colorDotSelected">#fff</color>
+
+</resources>

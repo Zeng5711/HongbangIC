@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tab_margin">16dp</dimen>
+    <dimen name="green_btn_padding">12dp</dimen>
+
+    <dimen name="login_margin_top">300dp</dimen>
+
+    <dimen name="btn_text_size">17sp</dimen>
+    <dimen name="btn_text_size_small">16sp</dimen>
+    <dimen name="btn_text_size_small2">14sp</dimen>
+    <dimen name="title_text_size">20sp</dimen>
+
+    <!-- 报修主界面 -->
+    <dimen name="repair_main_line_height">36dp</dimen>
+    <dimen name="repair_main_text_size">17sp</dimen>
+
+    <!-- 个人主界面 -->
+    <dimen name="personal_edge_space">20dp</dimen>
+    <dimen name="personal_item_height">45dp</dimen>
+
+    <dimen name="status_bar_height">20dp</dimen>
+
+</resources>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/light_gray2"
+              android:orientation="vertical"
+              tools:context=".fragment.PersonalFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_record_upload"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/sel_gray_btn_bg"
+                android:drawablePadding="8dp"
+                android:drawableTop="@drawable/icon_record_upload"
+                android:gravity="center"
+                android:text="刷卡记录上传"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btn_text_size_small2"/>
+
+            <TextView
+                android:id="@+id/btn_white_list_upload"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/sel_gray_btn_bg"
+                android:drawablePadding="8dp"
+                android:drawableTop="@drawable/icon_white_list_upload"
+                android:gravity="center"
+                android:text="白名单上传"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btn_text_size_small2" />
+
+            <TextView
+                android:id="@+id/btn_black_list_upload"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/sel_gray_btn_bg"
+                android:drawablePadding="8dp"
+                android:drawableTop="@drawable/icon_black_list_upload"
+                android:gravity="center"
+                android:text="黑名单上传"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btn_text_size_small2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_record_download"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/sel_gray_btn_bg"
+                android:drawablePadding="8dp"
+                android:drawableTop="@drawable/icon_record_download"
+                android:gravity="center"
+                android:text="刷卡记录下载"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btn_text_size_small2"/>
+
+            <TextView
+                android:id="@+id/btn_white_list_download"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/sel_gray_btn_bg"
+                android:drawablePadding="8dp"
+                android:drawableTop="@drawable/icon_white_list_download"
+                android:gravity="center"
+                android:text="白名单下载"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btn_text_size_small2"/>
+
+            <TextView
+                android:id="@+id/btn_black_list_download"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/sel_gray_btn_bg"
+                android:drawablePadding="8dp"
+                android:drawableTop="@drawable/icon_black_list_download"
+                android:gravity="center"
+                android:text="黑名单下载"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btn_text_size_small2"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/btn_change_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/personal_item_height"
+            android:background="@null"
+            android:drawableLeft="@drawable/icon_change_password"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/arrow_right"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/personal_edge_space"
+            android:paddingRight="@dimen/personal_edge_space"
+            android:text="@string/text_change_password"
+            android:textColor="@color/black"
+            android:textSize="@dimen/btn_text_size_small2"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/personal_edge_space"
+            android:layout_marginRight="@dimen/personal_edge_space"
+            android:background="@color/light_gray"/>
+
+        <TextView
+            android:id="@+id/btn_abort_app"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/personal_item_height"
+            android:background="@drawable/sel_gray_btn_bg"
+            android:drawableLeft="@drawable/icon_abort"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/arrow_right"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/personal_edge_space"
+            android:paddingRight="@dimen/personal_edge_space"
+            android:text="@string/text_abort"
+            android:textColor="@color/black"
+            android:textSize="@dimen/btn_text_size_small2"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/personal_edge_space"
+            android:layout_marginRight="@dimen/personal_edge_space"
+            android:background="@color/light_gray"/>
+
+        <TextView
+            android:id="@+id/btn_settings"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/personal_item_height"
+            android:background="@drawable/sel_gray_btn_bg"
+            android:drawableLeft="@drawable/icon_settings"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/arrow_right"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/personal_edge_space"
+            android:paddingRight="@dimen/personal_edge_space"
+            android:text="@string/text_settings"
+            android:textColor="@color/black"
+            android:textSize="@dimen/btn_text_size_small2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/personal_edge_space"
+        android:paddingRight="@dimen/personal_edge_space">
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sel_green_btn_bg"
+            android:padding="@dimen/green_btn_padding"
+            android:text="@string/text_logout"
+            android:textColor="@color/white"
+            android:textSize="@dimen/btn_text_size"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>

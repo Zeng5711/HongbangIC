@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.hongbang.ic">
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"></uses-permission>
+
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <application
+        android:name=".HBICApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:process="com.hongbang.ic"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.DarkStatusBar"/>
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.CommunityChooseActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"/>
+        <activity
+            android:name=".activity.RepairActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.PortalActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.RepairHistoryActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.RepairDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.NoticeListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.WebViewActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.RetrievePasswordActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".support.clipimage.ClipImageActivity"
+            android:screenOrientation="portrait"/>
+
+        <receiver android:name=".receiver.BootBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".GuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.DarkStatusBar"/>
+
+        <service
+            android:name=".keycenter.WifiKeyService"
+            android:enabled="true"
+            android:process=":remote"
+            android:exported="false"
+            />
+        <!---->
+
+        <activity
+            android:name=".activity.EditNicknameActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ShareKeyActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.AboutActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.DebugActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.DebugKeyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"/>
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.hongbang.ic.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+
+
+
+
+    </application>
+
+</manifest>

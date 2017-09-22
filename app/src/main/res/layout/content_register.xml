@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.hongbang.ic.activity.RegisterActivity"
+    tools:showIn="@layout/activity_register">
+
+    <LinearLayout
+        android:id="@+id/register_form_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/border_gray"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <EditText
+            android:id="@+id/edit_register_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@drawable/login_edit_phone"
+            android:drawablePadding="10dp"
+            android:hint="@string/hint_phone"
+            android:inputType="phone"
+            android:lines="1"
+            android:maxLength="11"
+            android:padding="15dp"
+            android:textColorHint="@color/hint_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_line_color" />
+
+        <EditText
+            android:id="@+id/edit_register_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@drawable/login_edit_pwd"
+            android:drawablePadding="10dp"
+            android:hint="@string/hint_pwd_set"
+            android:inputType="textWebPassword"
+            android:maxLength="16"
+            android:padding="15dp"
+            android:textColorHint="@color/hint_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_line_color" />
+
+        <EditText
+            android:id="@+id/edit_register_pwd_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@drawable/login_edit_pwd"
+            android:drawablePadding="10dp"
+            android:hint="@string/hint_pwd_confirm"
+            android:inputType="textWebPassword"
+            android:maxLength="16"
+            android:padding="15dp"
+            android:textColorHint="@color/hint_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/captcha_form_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_form_area"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_gray"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_captcha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="15dp"
+            android:hint="@string/hint_captcha"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="6"
+            android:paddingBottom="15dp"
+            android:paddingLeft="53dp"
+            android:paddingTop="15dp"
+            android:textColorHint="@color/hint_color" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_line_color" />
+
+        <Button
+            android:id="@+id/btn_get_captcha"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/sel_bg_captcha_btn"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="@string/captcha_btn_text"
+            android:textColor="@drawable/clickable_text"
+            android:textSize="@dimen/btn_text_size_small" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/captcha_form_area"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/sel_green_btn_bg"
+        android:padding="@dimen/green_btn_padding"
+        android:text="@string/register_btn_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/btn_text_size"
+        android:textStyle="bold" />
+</RelativeLayout>

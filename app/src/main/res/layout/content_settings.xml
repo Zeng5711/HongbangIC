@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray2"
+    android:orientation="vertical"
+    tools:context="com.hongbang.ic.activity.SettingsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="@dimen/personal_edge_space"
+        android:paddingRight="@dimen/personal_edge_space"
+        android:paddingTop="10dp"
+        android:text="@string/text_brush_setting"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/btn_text_size_small2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/personal_item_height"
+            android:background="@color/white"
+            android:drawablePadding="5dp"
+            android:paddingLeft="@dimen/personal_edge_space"
+            android:paddingRight="@dimen/personal_edge_space">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/text_screen_on_switch"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btn_text_size_small" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/sw_screen_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/personal_edge_space"
+            android:layout_marginRight="@dimen/personal_edge_space"
+            android:background="@color/light_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/personal_item_height"
+            android:background="@color/white"
+            android:drawablePadding="5dp"
+            android:paddingLeft="@dimen/personal_edge_space"
+            android:paddingRight="@dimen/personal_edge_space">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/text_shake_switch"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btn_text_size_small" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/sw_shake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null" />
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/personal_edge_space"
+            android:layout_marginRight="@dimen/personal_edge_space"
+            android:background="@color/light_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/personal_item_height"
+            android:background="@color/white"
+            android:drawablePadding="5dp"
+            android:paddingLeft="@dimen/personal_edge_space"
+            android:paddingRight="@dimen/personal_edge_space">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/text_automatic_connection"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btn_text_size_small"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/aut_conn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="7dp"
+            android:paddingLeft="@dimen/personal_edge_space"
+            android:paddingRight="@dimen/personal_edge_space"
+            android:paddingTop="10dp"
+            android:text="灵敏度"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/btn_text_size_small2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/personal_item_height"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/personal_edge_space"
+            android:paddingRight="@dimen/personal_edge_space">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_low"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btn_text_size_small" />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/sensitivity_seek"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="99"
+                android:progress="50" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_high"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btn_text_size_small" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/personal_item_height"
+            android:background="@color/white"
+            android:drawablePadding="5dp"
+            android:paddingLeft="@dimen/personal_edge_space"
+            android:paddingRight="@dimen/personal_edge_space">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/text_auto_disconnect_switch"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btn_text_size_small" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/sw_auto_disconnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

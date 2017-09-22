@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">宏邦智能社区</string>
+    <string name="app_name_version">宏邦智能社区 1.0.0</string>
+
+    <string name="module_community">社区</string>
+    <string name="module_around">附近</string>
+    <string name="module_key">钥匙</string>
+    <string name="module_business">商城</string>
+    <string name="module_personal">我的</string>
+
+    <string name="loading">加载中...</string>
+    <string name="processing">处理中...</string>
+    <string name="load_failed">数据获取失败...</string>
+    <string name="submit">提交</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+
+    <!-- Login Start -->
+    <string name="login_btn_text">登录</string>
+    <string name="login_sign_up">用户注册</string>
+    <string name="login_forget">忘记密码</string>
+    <string name="hint_phone">手机号</string>
+    <string name="hint_pwd">密码</string>
+    <string name="loading_login">登录中...</string>
+    <!-- Login End -->
+
+    <!-- Register Start -->
+    <string name="hint_pwd_set">密码，6–15位</string>
+    <string name="hint_pwd_confirm">确认密码</string>
+    <string name="hint_captcha">验证码</string>
+    <string name="register_title_text">注册</string>
+    <string name="register_btn_text">注册</string>
+    <string name="captcha_btn_text">获取验证码</string>
+    <string name="loading_registers">注册中...</string>
+    <!-- Register End -->
+
+    <!-- 小区设置 Start -->
+    <string name="title_choose_province">选择省份</string>
+    <string name="title_choose_city">选择城市</string>
+    <string name="title_choose_distinct">选择区县</string>
+    <string name="title_choose_community">选择小区</string>
+    <!-- 小区设置 End -->
+
+    <!-- Repair Start -->
+    <string name="label_phone">联系电话</string>
+    <string name="label_contacts">联系人</string>
+    <string name="label_repair_type">类型</string>
+    <string name="label_repair_desc">报修内容</string>
+    <string name="label_add_image">上传图片</string>
+    <string name="commit_repair_btn_text">提交</string>
+
+    <string name="title_repair_add">报修</string>
+    <string name="title_repair_history">我的报修</string>
+    <string name="title_repair_detail">我的报修详情</string>
+    <!-- Repair End -->
+
+    <!-- 修改密码 -->
+    <string name="title_retrieve_password">找回密码</string>
+
+    <string name="title_community_notice">社区公告</string>
+    <string name="title_service_guide">办事指南</string>
+    <string name="title_community_news">社区新闻</string>
+
+    <!-- 个人 -->
+    <string name="title_edit_nickname">修改昵称</string>
+    <string name="text_change_password">修改密码</string>
+    <string name="text_share_app">分享应用</string>
+    <string name="text_service_hotline">客服热线</string>
+    <string name="text_upgrade">检查更新</string>
+    <string name="text_abort">关于应用</string>
+    <string name="hint_nickname">昵称</string>
+    <string name="text_change_community">切换社区</string>
+    <string name="text_logout">注销登录</string>
+    <string name="text_logout2">注销</string>
+    <string name="hint_null_nickname">&lt;未设置&gt;</string>
+    <string name="text_share">分享</string>
+
+    <!-- 我的钥匙 -->
+    <string name="text_open_mailbox">信报箱</string>
+    <string name="text_open_door">房门开锁</string>
+
+    <!-- 修改密码 -->
+    <string name="title_change_pwd">修改密码</string>
+    <string name="hint_old_pwd">请输入原密码</string>
+    <string name="hint_new_pwd">请输入新密码</string>
+    <string name="hint_new_pwd_again">请再次输入新密码</string>
+
+    <string name="title_clip_image">选择头像</string>
+
+    <string name="choose_from_album">从手机相册选择</string>
+    <string name="choose_from_camera">拍照</string>
+
+    <string name="share_to_session">发送给朋友</string>
+    <string name="share_to_timeline">分享到朋友圈</string>
+    <string name="copyright">宏邦科技 版权所有\nCopyright ©2016 Hongbangkeji\nAll Rights Reserved</string>
+    <string name="to_score">去评分</string>
+    <string name="tip_no_data">暂时没有数据！</string>
+    <string name="tip_no_business">暂时没有商家信息！</string>
+    <string name="tip_not_authorized">您的账号可能暂未在当前小区授权，请先前往物业进行授权，如已授权，请更新钥匙包。</string>
+    <string name="text_debug">调试</string>
+    <string name="text_settings">设置</string>
+    <string name="text_brush_setting">选择要启用的开门方式</string>
+    <string name="text_screen_on_switch">亮屏开门</string>
+    <string name="text_shake_switch">摇一摇开门</string>
+    <string name="text_automatic_connection">自动连接</string>
+    <string name="text_low">低</string>
+    <string name="text_high">高</string>
+    <string name="text_auto_disconnect_switch">刷卡成功后自动断开连接</string>
+    <string name="text_manual">使用手册</string>
+</resources>

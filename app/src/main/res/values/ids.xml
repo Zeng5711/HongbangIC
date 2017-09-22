@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="tab_community" type="id">false</item>
+    <item name="tab_around" type="id">false</item>
+    <item name="tab_key" type="id">false</item>
+    <item name="tab_business" type="id">false</item>
+    <item name="tab_personal" type="id">false</item>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sel_gray_btn_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sel_gray_btn_bg">
+
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="18dp"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/text_time"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/text_time"
+            android:singleLine="true"
+            android:textSize="18sp"/>
+
+        <com.hongbang.ic.view.EllipsizeTextView
+            android:id="@+id/text_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/text_title"
+            android:layout_alignRight="@id/text_time"
+            android:layout_below="@id/text_title"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="middle"
+            android:gravity="top|left"
+            android:lines="2"
+            android:maxLines="2"
+            android:textColor="@color/gray"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/corner_process_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/icon_corner_processed"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/sep_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"/>
+</LinearLayout>

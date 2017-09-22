@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ProgressBar
+        android:id="@+id/loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:context="com.hongbang.ic.activity.WebViewActivity">
+
+        <TextView
+            android:id="@+id/text_content_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/text_content_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_content_title"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/gray"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/sep_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/text_content_time"
+            android:background="@color/gray_line_color"
+            android:visibility="gone"/>
+
+        <WebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/sep_line"
+            android:background="@color/light_gray"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/error_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:drawablePadding="12dp"
+        android:drawableTop="@drawable/web_error"
+        android:text="页面加载失败，点击重试！"
+        android:textColor="@color/gray"
+        android:textSize="15sp"
+        android:visibility="visible"/>
+</FrameLayout>

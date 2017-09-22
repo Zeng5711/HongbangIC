@@ -1,0 +1,9 @@
+<resources>
+    <declare-styleable name="PagerDotView">
+        <attr name="dotSize" format="dimension" />
+        <attr name="dotSpace" format="dimension" />
+        <attr name="defaultColor" format="color" />
+        <attr name="selectedColor" format="color" />
+        <attr name="selectedDotWidth" format="dimension" />
+    </declare-styleable>
+</resources>
